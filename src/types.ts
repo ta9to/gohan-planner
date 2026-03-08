@@ -4,6 +4,7 @@ export interface MealItem {
   ingredients: string[];
   cookTime: number;
   nutrition: { highlight: string };
+  instructions?: string[];
 }
 
 export interface DayMeal {
