@@ -2,6 +2,7 @@ export interface MealItem {
   name: string;
   description: string;
   ingredients: string[];
+  instructions?: string[];
   cookTime: number;
   nutrition: { highlight: string };
 }

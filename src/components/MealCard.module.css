@@ -88,3 +88,40 @@
   color: var(--color-text-secondary);
   font-style: italic;
 }
+
+.instructionsSection {
+  margin-top: 8px;
+  border-top: 1px solid var(--color-border);
+  padding-top: 8px;
+}
+
+.instructionsTitle {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--color-text-secondary);
+  margin-bottom: 4px;
+}
+
+.instructionsList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.instructionStep {
+  display: flex;
+  gap: 6px;
+  font-size: 0.8rem;
+  color: var(--color-text-primary);
+  line-height: 1.4;
+}
+
+.stepNumber {
+  flex-shrink: 0;
+  font-weight: 700;
+  color: var(--color-text-secondary);
+  min-width: 16px;
+}

@@ -48,6 +48,19 @@ export default function MealCard({ type, meal }: MealCardProps) {
               <span className={styles.nutritionBadge}>{meal.nutrition.highlight}</span>
             )}
           </div>
+          {meal.instructions && meal.instructions.length > 0 && (
+            <div className={styles.instructionsSection}>
+              <p className={styles.instructionsTitle}>作り方</p>
+              <ol className={styles.instructionsList}>
+                {meal.instructions.map((step, i) => (
+                  <li key={i} className={styles.instructionStep}>
+                    <span className={styles.stepNumber}>{i + 1}.</span>
+                    <span>{step}</span>
+                  </li>
+                ))}
+              </ol>
+            </div>
+          )}
         </div>
       ) : (
         <div className={styles.mealEmpty}>未設定</div>
